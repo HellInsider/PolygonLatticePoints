@@ -76,7 +76,7 @@ func findPointsOnMargins(n int, arr []Point) int {
 	}
 
 	//fmt.Println("Marg: ", sum)
-	return sum
+	return IntAbs(sum)
 }
 
 func findGauss(n int, arr []Point) int {
@@ -92,5 +92,5 @@ func findGauss(n int, arr []Point) int {
 	//fmt.Println(arr[0].x, "* (", arr[1].y, " - ", arr[n-1].y, ") = ", arr[0].x*(arr[1].y-arr[n-1].y))
 
 	//fmt.Println("Gauss: ", sum)
-	return sum
+	return IntAbs(sum)
 }
